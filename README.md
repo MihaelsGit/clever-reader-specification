@@ -9,6 +9,7 @@
 5. [Use Cases](#use-cases)
 6. [Sequence Diagrams](#sequence-diagrams)
 7. [Constraints](#constraints)
+8. [Architecture](#architecture)
 
 
 ## Introduction
@@ -20,10 +21,11 @@ This document aims to present in a precise and concise way the requirement that 
 The document is organized as follows:
 - An introduction, that describes the content of the document
 - A project background, that briefly presents the motivation of this project, the issues encountered and the solution that will be provided during the development process. Moreover, this section provides a brief overview of the principal stakeholders
-- A requirement-gathering process, that briefly presents the origin of the data
-- A requirement section, whose aim is to present the main requirement to meet at the end of the project
-- A user history section, that describes how the users interact with the system
+- A requirement section, which consists of requirement-gathering process and requirements whose aim is to present the main requirement to meet at the end of the project
+- A user story section, that describes how the users interact with the system
 - A user case section, which by means of a use case diagram presents the main use case supported by the final product
+- Constraints section, which consists of things that won't be covered in the final product
+- Architecture section, which shows a high lever architecture of the product.
 
 ### Audience
 This document primarily aims at:
@@ -40,6 +42,9 @@ Researchers routinely read academic papers. The goal of this project is to creat
 To reach that goal, these two features are essential for the PDF reader: It should first be able to parse the PDF file to extract crucial data from the document, such as figures, tables, or references. Second, it should be able to draw knowledge from the material that has been extracted in order to aid in paper interpretation and generate fresh research concepts.
 
 ## Requirements
+
+### Requirements gathering process
+All of the requirements were discusses on a couple of group meetings. After the first version of the requirements definition was created, customer was contacted and confirmed most of them and discarded a couple of requirements.
 
 ### Functional Requirements
 
@@ -85,7 +90,7 @@ Requirements will be validated with unit, integration and server load tests (str
 ## Use Cases
 
 ### Use Case Diagram
-<img width="50%" alt="image" src="https://user-images.githubusercontent.com/66385870/204817468-bda9238b-fb54-4936-8756-ee5c290fef6d.png">
+<img width="50%" alt="use_case_diagram" src="https://user-images.githubusercontent.com/66385870/204817468-bda9238b-fb54-4936-8756-ee5c290fef6d.png">
 
 ### Detailed Use Cases
 
@@ -150,18 +155,22 @@ Requirements will be validated with unit, integration and server load tests (str
 ## Sequence Diagrams
 
 #### Upload PDF
-<img width="70%" alt="image" src="https://user-images.githubusercontent.com/66385870/204835065-cc1e2842-009a-49ac-9158-41b6f2cce659.png">
+<img width="70%" alt="sequence_diagram_upload_pdf" src="https://user-images.githubusercontent.com/66385870/204835065-cc1e2842-009a-49ac-9158-41b6f2cce659.png">
 
 #### View a referred subject
-<img width="50%" alt="image" src="https://user-images.githubusercontent.com/66385870/204835197-dbbc4b48-2a30-4ca4-ae16-1b1f25d449cd.png">
+<img width="50%" alt="sequence_diagram_referred_subject" src="https://user-images.githubusercontent.com/66385870/204835197-dbbc4b48-2a30-4ca4-ae16-1b1f25d449cd.png">
 
 #### Generate summary
-<img width="50%" alt="image" src="https://user-images.githubusercontent.com/66385870/204835359-9fe922fb-0ce3-460f-b855-775afcdea9f1.png">
+<img width="50%" alt="sequence_diagram_summary" src="https://user-images.githubusercontent.com/66385870/204835359-9fe922fb-0ce3-460f-b855-775afcdea9f1.png">
 
 #### Generate knowledge graph
-<img width="50%" alt="image" src="https://user-images.githubusercontent.com/66385870/204835378-b61dc8e6-b7fe-441b-abef-68b6a1f1097c.png">
+<img width="50%" alt="sequence_diagram_knowledge_graph" src="https://user-images.githubusercontent.com/66385870/204835378-b61dc8e6-b7fe-441b-abef-68b6a1f1097c.png">
 
 ## Constraints
 
 - No user authentication, so if multiple users connect unexpected behaviour can occur
 - No mobile support because it is not convenient to have much popups and small windows on mobile screens
+
+## Architecture
+
+<img width="70%" alt="architecture_image" src="https://user-images.githubusercontent.com/66385870/204838387-31b93a05-00cf-42e1-b1c4-5b3813ee0219.png">
