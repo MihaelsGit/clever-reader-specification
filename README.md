@@ -7,7 +7,8 @@
 3. [Requirements](#requirements)
 4. [User Stories](#user-stories)
 5. [Use Cases](#use-cases)
-6. [Sequence Diagrams](#)
+6. [Sequence Diagrams](#sequence-diagrams)
+7. [Constraints](#constraints)
 
 
 ## Introduction
@@ -129,7 +130,6 @@ Requirements will be validated with unit, integration and server load tests (str
 | Exit condition | The knowledge graph is downloaded on the device of the User |
 | Exception | A communication error occurs |
 
-
 | Use Case Name | Generate a summary |
 | ----------- | ----------- |
 | Actor | User |
@@ -137,3 +137,10 @@ Requirements will be validated with unit, integration and server load tests (str
 | Event flow | The user clicks on the summary icon |
 | Exit condition | A window with the summary of the paper pops-up |
 | Exception | A communication error occurs |
+
+## Sequence Diagrams
+
+## Constraints
+
+- No user authentication, so if multiple users connect unexpected behaviour can occur
+- No mobile support because it is not convenient to have much popups and small windows on mobile screens
