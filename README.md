@@ -52,12 +52,11 @@ All of the requirements were discusses on a couple of group meetings. After the 
 | ----------- | ----------- | ----------- |
 | R1      | Upload PDF       | The User can upload PDF from their own device. |
 | R2   | Preview the PDF | A preview of the document is available for the user. Furthermore, the user can select the text with the cursor, an scroll up and down. |
-| R3      | Send PDF data to Server | The System must send extracted data from PDF to dedicated analysis Servers. |
-| R4   | Show reference on hover | The User can hover over any reference and the preview must open in a popup window displaying the object that is referenced. |
-| R5      | Navigate to reference on click | The User can click on any reference and navigate to it. |
-| R6      | Generate knowledge graph    | The System must generate knowledge graph from the list of referenced papers, usually at the last pages of academic papers. |
-| R7      | Show knowledge graph | The System must show generated knowledge graph on the UI. |
-| R8      | Create section summaries | The System must generate summaries from the paper. |
+| R3   | Show reference on hover | The User can hover over any reference and the preview must open in a popup window displaying the object that is referenced. |
+| R4      | Navigate to reference on click | The User can click on any reference and navigate to it. |
+| R5      | Generate knowledge graph    | The System must generate knowledge graph from the list of referenced papers, usually at the last pages of academic papers. |
+| R6      | Show knowledge graph | The System must show generated knowledge graph on the UI. |
+| R7      | Create section summaries | The System must generate summaries from the paper. |
 
 ### Non-Functional Requirements
 
