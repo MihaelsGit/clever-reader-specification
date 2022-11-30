@@ -51,7 +51,7 @@ All of the requirements were discusses on a couple of group meetings. After the 
 | Functional requirement      | Name | Description |
 | ----------- | ----------- | ----------- |
 | R1      | Upload PDF       | The User can upload PDF from their own device. |
-| R2   | Interaction with PDF | The User can do all standard operations with the PDF, like scroll and highlight with cursor. |
+| R2   | Preview the PDF | A preview of the document is available for the user. Furthermore, the user can select the text with the cursor, an scroll up and down. |
 | R3      | Send PDF data to Server | The System must send extracted data from PDF to dedicated analysis Servers. |
 | R4   | Show reference on hover | The User can hover over any reference and the preview must open in a popup window displaying the object that is referenced. |
 | R5      | Navigate to reference on click | The User can click on any reference and navigate to it. |
