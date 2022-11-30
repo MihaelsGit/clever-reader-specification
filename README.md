@@ -62,3 +62,8 @@ To reach that goal, these two features are essential for the PDF reader: It shou
 | NR2   | Capacity | Database cleanup after 90 days. |
 | NR3      | Anonymous pdf hashing | PDF will be anonymously stored as base64 encoded hash for the purpose of building knowledge graph. |
 | NR4   | Retry policy | In case of request timeout, the retry policy will be implemented so no data is lost. |
+
+
+### Requirements Validation
+Requirements will be validated with unit, integration and server load tests (stress test).
+
