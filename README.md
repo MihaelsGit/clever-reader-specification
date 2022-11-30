@@ -63,7 +63,7 @@ All of the requirements were discusses on a couple of group meetings. After the 
 | Non-Functional requirement      | Name | Description |
 | ----------- | ----------- | ----------- |
 | NR1   | Capacity | Database cleanup after 90 days. |
-| NR2      | Anonymous pdf hashing | PDF will be anonymously stored as base64 encoded hash for the purpose of building knowledge graph. |
+| NR2   | Anonymous pdf hashing | PDF should be stored anonymously. |
 | NR3   | Retry policy | In case of request timeout, the retry policy will be implemented so no data is lost. |
 
 
