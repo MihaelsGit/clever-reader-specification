@@ -81,8 +81,8 @@ Requirements will be validated with unit, integration and server load tests (str
 | S5      | Reference navigation | As a user, I want to be able to navigate to a reference by clicking on it, so that I don’t have to scroll to the reference location. |
 | S6      | Upload another academic paper  | As a user, I want to upload another academic paper to replace the one that's currently previewed, so that I can start reading another paper. |
 | S7      | Create a knowledge graph | As a user, I want to create a knowledge graph of the previewed paper, so that I can better see key terms and the interlocking relationships between them. |
-| S9      | Create a summary | As a user, I want to create a summary of the paper, so that I can get a better context of the topic. |
-| S10      | Download the summary | As a user, I want to copy the generated summary, so that I can reuse it. |
+| S8      | Create a summary | As a user, I want to create a summary of the paper, so that I can get a better context of the topic. |
+| S9      | Download the summary | As a user, I want to copy the generated summary, so that I can reuse it. |
 
 ## Use Cases
 
