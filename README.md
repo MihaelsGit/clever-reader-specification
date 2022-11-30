@@ -62,10 +62,9 @@ All of the requirements were discusses on a couple of group meetings. After the 
 
 | Non-Functional requirement      | Name | Description |
 | ----------- | ----------- | ----------- |
-| NR1      | Client to server communication | Communication should be done with asynchronous type of connection. Communication via REST API. |
-| NR2   | Capacity | Database cleanup after 90 days. |
-| NR3      | Anonymous pdf hashing | PDF will be anonymously stored as base64 encoded hash for the purpose of building knowledge graph. |
-| NR4   | Retry policy | In case of request timeout, the retry policy will be implemented so no data is lost. |
+| NR1   | Capacity | Database cleanup after 90 days. |
+| NR2      | Anonymous pdf hashing | PDF will be anonymously stored as base64 encoded hash for the purpose of building knowledge graph. |
+| NR3   | Retry policy | In case of request timeout, the retry policy will be implemented so no data is lost. |
 
 
 ### Requirements Validation
