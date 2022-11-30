@@ -5,10 +5,9 @@
 1. [Introduction](#introduction)
 2. [Project Background](#project-background)
 3. [Requirements](#requirements)
-4. [User stories](#user-stories)
-5. [Use case diagram](#)
-6. [Detailed use cases](#)
-7. [Sequence Diagrams](#)
+4. [User Stories](#user-stories)
+5. [Use Cases](#use-cases)
+6. [Sequence Diagrams](#)
 
 
 ## Introduction
@@ -82,3 +81,59 @@ Requirements will be validated with unit, integration and server load tests (str
 | S9      | Create a summary | As a user, I want to create a summary of the paper, so that I can get a better context of the topic. |
 | S10      | Download the summary | As a user, I want to copy the generated summary, so that I can reuse it. |
 
+## Use Cases
+
+### Use Case Diagram
+<img width="50%" alt="image" src="https://user-images.githubusercontent.com/66385870/204817468-bda9238b-fb54-4936-8756-ee5c290fef6d.png">
+
+### Detailed Use Cases
+
+| Use Case Name | Update PDF from the local device |
+| ----------- | ----------- |
+| Actor | User |
+| Entry condition | The User has a PDF file ready to be uploaded |
+| Event flow | 1. The user navigates the web application's home page and clicks on the button to upload the PDF <br>2. The users choose from its local storage the PDF to upload <br>3. The user clicks the start button|
+| Exit condition | The PDF is uploaded on the web application, and a preview is available |
+| Exception | 1. The file selected by the user has the wrong format <br>2. A communication error occurs |
+
+| Use Case Name | View a referred item via a pop-up |
+| ----------- | ----------- |
+| Actor | User |
+| Entry condition | The user has uploaded a PDF file with cross-references |
+| Event flow | 1. The user hovers the mouse cursor over the cross-referenced item <br>2. A window containing the referred item pops-up |
+| Exit condition | The user can view the referred item via the pop-up |
+| Exception | A communication error occurs |
+
+
+| Use Case Name | Navigate to a referred item |
+| ----------- | ----------- |
+| Actor | User |
+| Entry condition | The user has uploaded a PDF file with cross-references |
+| Event flow | 3. The user hovers the mouse cursor over the cross-referenced item <br>4. The user clicks on the reference |
+| Exit condition | The user can view the referred item |
+| Exception | A communication error occurs |
+
+| Use Case Name | Generate a knowledge graph |
+| ----------- | ----------- |
+| Actor | User |
+| Entry condition | The User has uploaded one or more PDF files with cross-references |
+| Event flow | The user clicks on the knowledge graph icon |
+| Exit condition | The knowledge graph is generated and a preview is available |
+| Exception | A communication error occurs |
+
+| Use Case Name | Download a knowledge graph |
+| ----------- | ----------- |
+| Actor | User |
+| Entry condition | The User has uploaded one or more PDF files with cross-references |
+| Event flow | 1. The user clicks on the knowledge graph icon <br>2. The user clicks on the download button |
+| Exit condition | The knowledge graph is downloaded on the device of the User |
+| Exception | A communication error occurs |
+
+
+| Use Case Name | Generate a summary |
+| ----------- | ----------- |
+| Actor | User |
+| Entry condition | The user has uploaded a PDF file with cross-references |
+| Event flow | The user clicks on the summary icon |
+| Exit condition | A window with the summary of the paper pops-up |
+| Exception | A communication error occurs |
