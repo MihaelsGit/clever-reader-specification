@@ -5,7 +5,7 @@
 1. [Introduction](#introduction)
 2. [Project Background](#project-background)
 3. [Requirements](#requirements)
-4. [User stories](#)
+4. [User stories](#user-stories)
 5. [Use case diagram](#)
 6. [Detailed use cases](#)
 7. [Sequence Diagrams](#)
@@ -66,4 +66,19 @@ To reach that goal, these two features are essential for the PDF reader: It shou
 
 ### Requirements Validation
 Requirements will be validated with unit, integration and server load tests (stress test).
+
+## User Stories
+
+| ID      | Name | Description |
+| ----------- | ----------- | ----------- |
+| S1      | Upload academic paper from computer      | As a user, I want to upload an academic paper from my computer, so that I can preview it. |
+| S2   | Error messages | As a user, I want to be informed in detail if the academic paper wasn’t uploaded successfully, so that I know if something went wrong. |
+| S3      | Try upload again | As a user, I want to be able to upload the academic paper if the first upload was unsuccessful, so that I can try to upload the paper again. |
+| S4   | Popups for references | As a user, I want to see a content preview of the reference when hovering over it, so that I can see more information without navigating to the reference. |
+| S5      | Reference navigation | As a user, I want to be able to navigate to a reference by clicking on it, so that I don’t have to scroll to the reference location. |
+| S6      | Upload another academic paper  | As a user, I want to upload another academic paper to replace the one that's currently previewed, so that I can start reading another paper. |
+| S7      | Create a knowledge graph | As a user, I want to create a knowledge graph of the previewed paper, so that I can better see key terms and the interlocking relationships between them. |
+| S8      | Download knowledge graph | As a user, I want to download the generated knowledge graph, so that I can use it without accessing the CleverReader website. |
+| S9      | Create a summary | As a user, I want to create a summary of the paper, so that I can get a better context of the topic. |
+| S10      | Download the summary | As a user, I want to copy the generated summary, so that I can reuse it. |
 
