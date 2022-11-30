@@ -97,6 +97,8 @@ Requirements will be validated with unit, integration and server load tests (str
 | Exit condition | The PDF is uploaded on the web application, and a preview is available |
 | Exception | 1. The file selected by the user has the wrong format <br>2. A communication error occurs |
 
+<br>
+
 | Use Case Name | View a referred item via a pop-up |
 | ----------- | ----------- |
 | Actor | User |
@@ -105,6 +107,7 @@ Requirements will be validated with unit, integration and server load tests (str
 | Exit condition | The user can view the referred item via the pop-up |
 | Exception | A communication error occurs |
 
+<br>
 
 | Use Case Name | Navigate to a referred item |
 | ----------- | ----------- |
@@ -114,6 +117,8 @@ Requirements will be validated with unit, integration and server load tests (str
 | Exit condition | The user can view the referred item |
 | Exception | A communication error occurs |
 
+<br>
+
 | Use Case Name | Generate a knowledge graph |
 | ----------- | ----------- |
 | Actor | User |
@@ -122,6 +127,8 @@ Requirements will be validated with unit, integration and server load tests (str
 | Exit condition | The knowledge graph is generated and a preview is available |
 | Exception | A communication error occurs |
 
+<br>
+
 | Use Case Name | Download a knowledge graph |
 | ----------- | ----------- |
 | Actor | User |
@@ -129,6 +136,8 @@ Requirements will be validated with unit, integration and server load tests (str
 | Event flow | 1. The user clicks on the knowledge graph icon <br>2. The user clicks on the download button |
 | Exit condition | The knowledge graph is downloaded on the device of the User |
 | Exception | A communication error occurs |
+
+<br>
 
 | Use Case Name | Generate a summary |
 | ----------- | ----------- |
