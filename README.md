@@ -51,22 +51,20 @@ All of the requirements were discusses on a couple of group meetings. After the 
 | Functional requirement      | Name | Description |
 | ----------- | ----------- | ----------- |
 | R1      | Upload PDF       | The User can upload PDF from their own device. |
-| R2   | Interaction with PDF | The User can do all standard operations with the PDF, like scroll and highlight with cursor. |
-| R3      | Send PDF data to Server | The System must send extracted data from PDF to dedicated analysis Servers. |
-| R4   | Show reference on hover | The User can hover over any reference and the preview must open in a popup window displaying the object that is referenced. |
-| R5      | Navigate to reference on click | The User can click on any reference and navigate to it. |
-| R6      | Generate knowledge graph    | The System must generate knowledge graph from the list of referenced papers, usually at the last pages of academic papers. |
-| R7      | Show knowledge graph | The System must show generated knowledge graph on the UI. |
-| R8      | Create section summaries | The System must generate summaries from the paper. |
+| R2   | Preview the PDF | A preview of the document is available for the user. Furthermore, the user can select the text with the cursor, an scroll up and down. |
+| R3   | Show reference on hover | The User can hover over any reference and the preview must open in a popup window displaying the object that is referenced. |
+| R4      | Navigate to reference on click | The User can click on any reference and navigate to it. |
+| R5      | Generate knowledge graph    | The System must generate knowledge graph from the list of referenced papers, usually at the last pages of academic papers. |
+| R6      | Show knowledge graph | The System must show generated knowledge graph on the UI. |
+| R7      | Create section summaries | The System must generate summaries from the paper. |
 
 ### Non-Functional Requirements
 
 | Non-Functional requirement      | Name | Description |
 | ----------- | ----------- | ----------- |
-| NR1      | Client to server communication | Communication should be done with asynchronous type of connection. Communication via REST API. |
-| NR2   | Capacity | Database cleanup after 90 days. |
-| NR3      | Anonymous pdf hashing | PDF will be anonymously stored as base64 encoded hash for the purpose of building knowledge graph. |
-| NR4   | Retry policy | In case of request timeout, the retry policy will be implemented so no data is lost. |
+| NR1   | Capacity | Database cleanup after 90 days. |
+| NR2   | Anonymous pdf hashing | PDF should be stored anonymously. |
+| NR3   | Retry policy | In case of request timeout, the retry policy will be implemented so no data is lost. |
 
 
 ### Requirements Validation
@@ -83,9 +81,8 @@ Requirements will be validated with unit, integration and server load tests (str
 | S5      | Reference navigation | As a user, I want to be able to navigate to a reference by clicking on it, so that I don’t have to scroll to the reference location. |
 | S6      | Upload another academic paper  | As a user, I want to upload another academic paper to replace the one that's currently previewed, so that I can start reading another paper. |
 | S7      | Create a knowledge graph | As a user, I want to create a knowledge graph of the previewed paper, so that I can better see key terms and the interlocking relationships between them. |
-| S8      | Download knowledge graph | As a user, I want to download the generated knowledge graph, so that I can use it without accessing the CleverReader website. |
-| S9      | Create a summary | As a user, I want to create a summary of the paper, so that I can get a better context of the topic. |
-| S10      | Download the summary | As a user, I want to copy the generated summary, so that I can reuse it. |
+| S8      | Create a summary | As a user, I want to create a summary of the paper, so that I can get a better context of the topic. |
+| S9      | Download the summary | As a user, I want to copy the generated summary, so that I can reuse it. |
 
 ## Use Cases
 
@@ -134,16 +131,6 @@ Requirements will be validated with unit, integration and server load tests (str
 
 <br>
 
-| Use Case Name | Download a knowledge graph |
-| ----------- | ----------- |
-| Actor | User |
-| Entry condition | The User has uploaded one or more PDF files with cross-references |
-| Event flow | 1. The user clicks on the knowledge graph icon <br>2. The user clicks on the download button |
-| Exit condition | The knowledge graph is downloaded on the device of the User |
-| Exception | A communication error occurs |
-
-<br>
-
 | Use Case Name | Generate a summary |
 | ----------- | ----------- |
 | Actor | User |
@@ -164,7 +151,7 @@ Requirements will be validated with unit, integration and server load tests (str
 <img width="50%" alt="sequence_diagram_summary" src="https://user-images.githubusercontent.com/66385870/204835359-9fe922fb-0ce3-460f-b855-775afcdea9f1.png">
 
 #### Generate knowledge graph
-<img width="50%" alt="sequence_diagram_knowledge_graph" src="https://user-images.githubusercontent.com/66385870/204835378-b61dc8e6-b7fe-441b-abef-68b6a1f1097c.png">
+<img width="50%" alt="sequence_diagram_knowledge_graph" src="https://user-images.githubusercontent.com/66385870/204852103-83c95b27-1ea4-4c1c-8a4d-69d816a71972.png">
 
 ## Constraints
 
