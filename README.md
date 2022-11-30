@@ -131,16 +131,6 @@ Requirements will be validated with unit, integration and server load tests (str
 
 <br>
 
-| Use Case Name | Download a knowledge graph |
-| ----------- | ----------- |
-| Actor | User |
-| Entry condition | The User has uploaded one or more PDF files with cross-references |
-| Event flow | 1. The user clicks on the knowledge graph icon <br>2. The user clicks on the download button |
-| Exit condition | The knowledge graph is downloaded on the device of the User |
-| Exception | A communication error occurs |
-
-<br>
-
 | Use Case Name | Generate a summary |
 | ----------- | ----------- |
 | Actor | User |
@@ -161,7 +151,7 @@ Requirements will be validated with unit, integration and server load tests (str
 <img width="50%" alt="sequence_diagram_summary" src="https://user-images.githubusercontent.com/66385870/204835359-9fe922fb-0ce3-460f-b855-775afcdea9f1.png">
 
 #### Generate knowledge graph
-<img width="50%" alt="sequence_diagram_knowledge_graph" src="https://user-images.githubusercontent.com/66385870/204835378-b61dc8e6-b7fe-441b-abef-68b6a1f1097c.png">
+<img width="50%" alt="sequence_diagram_knowledge_graph" src="https://user-images.githubusercontent.com/66385870/204852103-83c95b27-1ea4-4c1c-8a4d-69d816a71972.png">
 
 ## Constraints
 
