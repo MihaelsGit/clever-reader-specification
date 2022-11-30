@@ -149,6 +149,18 @@ Requirements will be validated with unit, integration and server load tests (str
 
 ## Sequence Diagrams
 
+#### Upload PDF
+<img width="70%" alt="image" src="https://user-images.githubusercontent.com/66385870/204835065-cc1e2842-009a-49ac-9158-41b6f2cce659.png">
+
+#### View a referred subject
+<img width="50%" alt="image" src="https://user-images.githubusercontent.com/66385870/204835197-dbbc4b48-2a30-4ca4-ae16-1b1f25d449cd.png">
+
+#### Generate summary
+<img width="50%" alt="image" src="https://user-images.githubusercontent.com/66385870/204835359-9fe922fb-0ce3-460f-b855-775afcdea9f1.png">
+
+#### Generate knowledge graph
+<img width="50%" alt="image" src="https://user-images.githubusercontent.com/66385870/204835378-b61dc8e6-b7fe-441b-abef-68b6a1f1097c.png">
+
 ## Constraints
 
 - No user authentication, so if multiple users connect unexpected behaviour can occur
