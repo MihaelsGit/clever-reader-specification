@@ -10,6 +10,7 @@
 6. [Sequence Diagrams](#sequence-diagrams)
 7. [Constraints](#constraints)
 8. [Architecture](#architecture)
+9. [Repositories](#repositories)
 
 
 ## Introduction
@@ -161,3 +162,16 @@ Requirements will be validated with unit, integration and server load tests (str
 ## Architecture
 
 <img width="70%" alt="architecture_image" src="https://user-images.githubusercontent.com/66385870/204838387-31b93a05-00cf-42e1-b1c4-5b3813ee0219.png">
+
+## Repositories
+
+### List of repositories
+
+The project development was split into 4 git repositories:
+  - [Frontend](https://github.com/MihaelsGit/CleverReader)
+  - [Middleware](https://github.com/AvendoOT/clever-reader-middleware)
+  - [Summary service](https://github.com/jaimetomares/CleverReaderJaime)
+  - [Reference service]()
+
+### Deployment
+
