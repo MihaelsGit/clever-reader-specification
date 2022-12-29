@@ -171,7 +171,7 @@ The project development was split into 4 git repositories:
   - [Frontend](https://github.com/MihaelsGit/CleverReader)
   - [Middleware](https://github.com/AvendoOT/clever-reader-middleware)
   - [Summary service](https://github.com/jaimetomares/CleverReaderJaime)
-  - [Reference service]()
+  - [Reference service](https://github.com/AvendoOT/clever-reader-reference)
 
 ### Deployment
 
