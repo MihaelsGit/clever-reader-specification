@@ -169,6 +169,7 @@ Requirements will be validated with unit, integration and server load tests (str
 
 - No user authentication, so if multiple users connect unexpected behaviour can occur
 - No mobile support because it is not convenient to have much popups and small windows on mobile screens
+- The maximum supported pdf file size is 1MB because of the limits of H2 database
 
 ## Architecture
 
