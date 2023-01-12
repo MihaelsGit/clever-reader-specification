@@ -175,6 +175,15 @@ Requirements will be validated with unit, integration and server load tests (str
 
 <img width="70%" alt="architecture_image" src="https://user-images.githubusercontent.com/66385870/204838387-31b93a05-00cf-42e1-b1c4-5b3813ee0219.png">
 
+Microservice architecture is distributed in th following way:
+
+1. Presentation layer - React.js application built upon a PDF.js library
+2. Middleware layer - Spring Boot 2+ application connected to the H2 in memory database used to host the PDF and route the request to the correct microservice
+3. Reference service - Django application used to extract references and generate the JSON for the knowledge graph
+4. Summary service - Django application used to generate a summary from the PDF
+
+Microservices communicate using HTTP and JSON request/response pattern.
+
 ## Repositories
 
 ### List of repositories
@@ -213,3 +222,47 @@ The project development was split into 4 git repositories:
 3. Click on the "Upload files" button and select the `build` directory from your React project.
 4. After the files have been uploaded, click on the "Deploy" button to deploy your app.
 5. Your app should now be live at the URL provided in the Firebase console under the "Hosting" section.
+
+
+## Deploying a Spring Boot middleware application to Render
+
+### Prerequisites
+
+- Render and Github account with the Render Web Service project set up. If you don't have one, got to [Render website](https://render.com/)  and create a new, free account.
+- Dockerfile for Spring Boot application
+
+### Steps
+
+1. Set up the web service on Render choosing to connect it with the github repository
+2. Set the environment to use Docker
+3. Set the path to Dockerfile from the root of your repository
+4. Upon merging the pull request into master branch, Render CI/CD will start building and deploying the application from the instructions given in the Dockefile
+
+## Deploying a Django summary service application to Render
+
+### Prerequisites
+
+- Render and Github account with the Render Web Service project set up. If you don't have one, got to [Render website](https://render.com/)  and create a new, free account.
+- build.sh file for pip build instructions
+
+### Steps
+
+1. Set up the web service on Render choosing to connect it with the github repository
+2. Set the environment to use Python3 
+3. Set the path to build.sh file
+4. Set the start command to  gunicorn summary_service.wsgi:application to use gunicorn server
+5. Set the environment variables to use Python v3.9.0, Debug flag set as True and API_KEY to your OpenAI secret key
+6. Upon merging the pull request into master branch, Render CI/CD will start building and deploying the application from the instructions given in the build.sh
+
+## Deploying a Django reference service application to PythonAnywhere
+
+### Prerequisites
+
+- PythonAnywhere account with the web project set up. If you don't have one, got to [PythonAnywhere website](https://www.pythonanywhere.com/)  and create a new, free account.
+
+### Steps
+
+1. Set up the web app on PythonAnywhere and copy the project files into its file system
+2. Set the path to virtual environment
+4. Reload the web app and check the access logs to see if it is live
+
